@@ -27,13 +27,14 @@ namespace SocketClientStarter
                     {
                         break;
                     }
-                }
-                byte[] buffSend = Encoding.ASCII.GetBytes(inputCommand);
-                client.Send(buffSend);
+                    byte[] buffSend = Encoding.ASCII.GetBytes(inputCommand);
+                    client.Send(buffSend);
 
-                byte[] buffReceived = new byte[128];
-                int nRecv = client.Receive(buffReceived);
-                Console.WriteLine("Data received: {0}", Encoding.ASCII.GetString(buffReceived, 0, nRecv));
+                    byte[] buffReceived = new byte[128];
+                    int nRecv = client.Receive(buffReceived);
+                    Console.WriteLine("Data received: {0}", Encoding.ASCII.GetString(buffReceived, 0, nRecv));
+                }
+          
             }
             catch (Exception e) {
                 Console.WriteLine(e.ToString());

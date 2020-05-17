@@ -18,7 +18,7 @@ namespace SocketClientStarter
                 client.Connect(Server.ipAddr, Server.portNum);
                 Console.WriteLine("COnnection to server is a success!");
                 Console.WriteLine("Socket= " + Server.ipAddr + ":"+ Server.portNum);
-                Console.WriteLine("Type text you want to send to the server. The <ENTER>");
+                Console.WriteLine("Type text you want to send to the server. The <EXIT>");
                 string inputCommand = string.Empty;
                 while (true)
                 {
